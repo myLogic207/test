@@ -1,2 +1,1 @@
-# lua_test
- Just a typical test repo for lua
+Different funny tests and examples of different languages. Fell free to contribute!
