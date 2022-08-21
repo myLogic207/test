@@ -38,11 +38,6 @@ function Calculator:lookupOperation(operation, num1, num2)
         ["/"] = function (n1, n2) return self:div(n1, n2) end
     }
     return (t[operation] and {t[operation](num1, num2)} or {"Invalid operation"})[1]
-    -- if t[operation] then
-    --     return t[operation](num1, num2)
-    -- else
-    --     return "Invalid operation"
-    -- end
 end
 
 return Calculator
