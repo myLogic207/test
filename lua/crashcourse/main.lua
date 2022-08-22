@@ -14,6 +14,9 @@ function myFunction()
     print("hello")
 end
 
+-- and this a call to the function
+myFunction()
+
 -- variables and functions can be local (file/scope specific)
 
 local myLocalVariable = "hello"
@@ -36,6 +39,48 @@ print("hello" .. " " .. "world")
 -- We can also concatenate variables
 
 print(myVariable .. " " .. myLocalVariable)
+
+-- lua also has basic control structures like if, else, while, for, do, and repeat
+
+--[[
+    These are the boolean operators used in lua
+    and - and
+    or - or
+    not - not
+    == - equal to
+    ~= - not equal to
+    > - greater than
+    < - less than
+    >= - greater than or equal to
+    <= - less than or equal to
+]]
+
+-- this is a if statement
+if myVariable == "hello" then
+    print("hello")
+else
+    print("not hello")
+end
+
+-- this is a short if (or ternary)
+print(myVariable == "hello" and "hello" or "not hello")
+
+-- this is a for loop, you essentially give it a range
+for i = 1, 100 do
+    print(i)
+end
+
+-- this is a while loop
+while myVariable ~= "hello" do
+    print("hello")
+    myVariable = "not hello"
+end
+
+-- this is a repeat loop, this is flipped while loop (or do-while)
+repeat
+    print("hello")
+until myVariable == "hello"
+
 
 -- functions can have parameters
 
