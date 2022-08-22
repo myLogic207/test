@@ -63,6 +63,11 @@ tableWithString = {"hello", "world"}
 tableWithTable = {{"hello", "world"}, {"goodbye", "world"}}
 tableFromFunction = returnMultipleVariables()
 
+-- You use array syntax to access table values
+
+print(tableWithValues[1])
+print(tableWithString[2])
+
 -- tables can be key:value pairs
 
 tableWithValues = {
@@ -70,6 +75,20 @@ tableWithValues = {
     key2 = 2,
     key3 = 3
 }
+
+-- you can use the pairs function to iterate through a table, essentially for-each loop
+
+for key, value in pairs(tableWithValues) do
+    print(key, value)
+end
+
+-- you access key-value-table values using the dot operator as well
+
+print(tableWithValues.key1)
+
+-- or use the array syntax (normal json paths)
+
+print(tableWithValues["key1"])
 
 -- thats how you make a switch statement in lua (lookupTables)
 
