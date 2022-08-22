@@ -25,6 +25,11 @@ local function myLocalFunction()
     print("hello")
 end
 
+-- local variablesa are written with lowercase first letter; Globals are written with uppercase first letter
+
+local myLocalVariable = "hello"
+MyGlobalVariable = "hello"
+
 -- functions should have local variables in them
 
 function myFunctionWithLocalVariable()
@@ -181,7 +186,7 @@ end
 
 -- To make an object of the Class we call the constructor
 
-myObject = Class:new()
+local myObject = Class:new()
 
 -- We can also inherite in lua
 
